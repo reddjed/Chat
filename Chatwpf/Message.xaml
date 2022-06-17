@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Chat.Messagectrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Chat"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="500">
+    <Grid>
+        <Border Background="#FFD6D6D6" CornerRadius="30">
+
+            <StackPanel>
+                <TextBlock Text="{Binding UserName}" HorizontalAlignment="Left" Padding="10" FontSize="11" FontStyle="Italic" />
+                <TextBlock Padding="5" Text="{Binding Msg}" TextWrapping="Wrap" FontSize="14" />
+                <TextBlock Background="Transparent" HorizontalAlignment="Right" Text="{Binding Time}" Padding="10"/>
+            </StackPanel>
+                 
+        </Border>
+    </Grid>
+</UserControl>
